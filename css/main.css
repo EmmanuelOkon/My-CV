@@ -53,7 +53,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -131,7 +130,7 @@ body {
     position: relative;
     width: 100%;
     height: 6px;
-    background: #081921;
+    background: #211108;
     display: block;
     margin-top: 5px;
 }
@@ -179,27 +178,6 @@ body {
     color: #333;
 }
 
-.about  .box {
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0;
-}
-
-.about .box .year-company {
-    min-width: 150px;
-}
-
-.about .box .year-company h5 {
-    text-transform: uppercase;
-    color: #908e84;
-    font-weight: 600;
-}
-
-.about .box .text h4 {
-    text-transform: uppercase;
-    color: #f46f03;
-    font-size: 16px;
-}
 
 .skills .box {
     position: relative;
@@ -246,16 +224,8 @@ body {
         flex-direction: column;
     }
 
-    .about .box .year-company {
-        min-width: 150px;
-        margin-bottom: 5px;
-    }
-
     .skills .box {
         grid-template-columns: repeat(1,1fr);
-    }
-
-
-    
+    }   
 }
 
