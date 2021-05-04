@@ -6,7 +6,7 @@
 }
 
 body {
-    background: lightblue;
+    background: rgb(230, 212, 173);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body {
 
 .container .left-side {
     position: relative;
-    background: #003147;
+    background: #472000;
     padding: 40px;
 }
 
@@ -99,12 +99,13 @@ body {
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: #03A9F4;
+    color: #f46f03;
 }
 
-.contactInfo ul li span {
+.contactInfo ul li a {
     color: #FFF;
     font-weight: 300;
+    text-decoration: none;
 }
 
 .contactInfo.education li {
@@ -112,7 +113,7 @@ body {
 }
 
 .contactInfo.education h5 {
-    color: #03A9F4;
+    color: #f46f03;
     font-weight: 500;
 }
 
@@ -140,8 +141,14 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    background: #03A9F4;
+    background: #f46f03;
 }
+
+.contactInfo.languages .text {
+    color: #FFF;
+}
+
+
 .container .right-side {
     position: relative;
     background: #FFF;
@@ -157,10 +164,15 @@ body {
 }
 
 .title2 {
-    color: #003147;
+    color: #472000;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
+}
+
+.about p a {
+    text-decoration: none;
+    color: #f4a003;
 }
 
 .about p {
@@ -179,13 +191,13 @@ body {
 
 .about .box .year-company h5 {
     text-transform: uppercase;
-    color: #848c90;
+    color: #908e84;
     font-weight: 600;
 }
 
 .about .box .text h4 {
     text-transform: uppercase;
-    color: #2A7DA2;
+    color: #f46f03;
     font-size: 16px;
 }
 
@@ -216,35 +228,15 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    background: #03A9F4;
+    background: #f46f03;
 }
 
-.interest ul {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
 
-.interest ul li {
-    list-style: none;
-    color: #333;
-    font-weight: 500;
-    margin: 10px 0;
-}
-
-.interest ul li .fa {
-    color: #03A9FA;
-    font-size: 18px;
-    width: 20px;
-}
 
 @media (max-width: 1000px) {
     .container {
         margin: 10px;
         grid-template-columns: repeat(1,1fr);
-    }
-
-    .interest ul {
-        grid-template-columns: repeat(2,1fr);
     }
     
 }
@@ -257,10 +249,6 @@ body {
     .about .box .year-company {
         min-width: 150px;
         margin-bottom: 5px;
-    }
-
-    .interest ul {
-        grid-template-columns: repeat(1,1fr);
     }
 
     .skills .box {
