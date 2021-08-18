@@ -1,231 +1,339 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: rgb(230, 212, 173);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
-    background: #FFF;
-    margin: 50px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  padding: 3rem 6rem;
+  background-color: #1a1a1a;
 }
 
-.container .left-side {
-    position: relative;
-    background: #472000;
-    padding: 40px;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.profileText {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+.logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
 }
 
-.profileText .imgBx {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
+.logo img {
+  width: 50px;
 }
 
-.profileText .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: cover;
+.name {
+  display: flex;
+  align-items: center;
+  color: #00ccff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.name a:nth-child(2) {
+  padding-left: 1.2rem;
+  text-decoration: none;
+  color: #00ccff;
+}
+
+.topContactInfo ul {
+  display: flex;
+  list-style: none;
+}
+
+.topContactInfo ul li {
+  padding: 20px;
+}
+
+.topContactInfo ul li:nth-child(4) {
+  padding-right: 0;
+}
+
+.topContactInfo ul li .icon {
+  width: 30px;
+  font-size: 20px;
+  color: #00ccff;
 }
 
 .profileText h2 {
-    color: #FFF;
-    font-size: 1.5rem;
-    margin-top: 10px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-    line-height: 1.4em;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  padding-bottom: 10px;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.4em;
 }
 
 .profileText h2 span {
-    font-size: 0.8em;
-    font-weight: 300;
+  color: #00ccff;
 }
 
-.contactInfo {
-    padding-top: 40px;
+.profileText p {
+  color: #fff;
+  word-spacing: 2px;
+  line-height: 25px;
+  padding-top: 5px;
+}
+
+.profileText p a {
+  color: #00ccff;
+  text-decoration: none;
 }
 
 .title {
-    color: #FFF;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contactInfo {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contactInfo p {
+  color: #fff;
+  line-height: 25px;
 }
 
 .contactInfo ul {
-    position: relative;
+  align-items: left;
 }
 
 .contactInfo ul li {
-    position: relative;
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
 }
 
 .contactInfo ul li .icon {
-    display: inline-block;
-    width: 30px;
-    font-size: 18px;
-    color: #f46f03;
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #00ccff;
 }
 
 .contactInfo ul li a {
-    color: #FFF;
-    font-weight: 300;
-    text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
 }
 
-.contactInfo.education li {
-    margin-bottom: 15px;
+.acknowledgements {
+  width: 100%;
+  margin: 2rem 0;
 }
 
-.contactInfo.education h5 {
-    color: #f46f03;
-    font-weight: 500;
+.acknowledgements h2 {
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  color: #fff;
 }
 
-.contactInfo.education h4:nth-child(2) {
-    color: #FFF;
-    font-weight: 600;
+.acknowledgements p {
+  color: #fff;
+  padding-bottom: 1rem;
+  word-spacing: 2px;
 }
 
-.contactInfo.education h4 {
-    color: #FFF;
-    font-weight: 300;
+.acknowledgements p a {
+  color: #00ccff;
+  text-decoration: none;
 }
 
-.contactInfo.languages .percent {
-    position: relative;
+.acknowledgements ul {
+  background-color: rgba(255, 255, 255, 0.808);
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acknowledgements ul a {
+  width: 200px;
+}
+
+.acknowledgements ul a img {
+  width: 100%;
+}
+
+.acknowledgements ul a img:hover {
+  cursor: pointer;
+  box-shadow: #1a1a1a;
+}
+
+.skills ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+  justify-content: left;
+}
+
+.skills ul li {
+  padding-right: 2rem;
+  color: #fff;
+}
+
+.skills ul li::before {
+  content: "\2022";
+  color: #00ccff;
+  padding-right: 10px;
+}
+
+.skills h2 {
+  color: #fff;
+  font-weight: 500;
+  font-weight: bold;
+  margin-top: 4rem;
+  padding-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.contactHead {
+  margin-top: 4rem;
+  padding-bottom: 10px;
+  line-height: 1.4em;
+  color: #fff;
+}
+
+.foot {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 2rem;
+  color: #fff;
+}
+
+@media (max-width: 880px) {
+  .acknowledgements ul a {
+    width: 120px;
+  }
+}
+
+@media (max-width: 800px) {
+  .acknowledgements ul a {
+    width: 120px;
+  }
+}
+
+@media (max-width: 769px) {
+  .container {
+    padding: 1rem 3rem;
     width: 100%;
-    height: 6px;
-    background: #211108;
-    display: block;
-    margin-top: 5px;
+  }
+
+  .acknowledgements {
+    margin: 2rem 0;
+  }
+
+  .acknowledgements ul {
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+  }
+
+  .acknowledgements ul a {
+    width: 150px;
+  }
 }
 
-.contactInfo.languages .percent div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #f46f03;
+@media (max-width: 656px) {
+  .acknowledgements ul a {
+    width: 100px;
+  }
 }
 
-.contactInfo.languages .text {
-    color: #FFF;
-}
-
-
-.container .right-side {
-    position: relative;
-    background: #FFF;
-    padding: 40px;
-}
-
-.about {
-    margin-bottom: 50px;
-}
-
-.about:last-child {
-    margin-bottom: 0;
-}
-
-.title2 {
-    color: #472000;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-.about p a {
-    text-decoration: none;
-    color: #f4a003;
-}
-
-.about p {
-    color: #333;
-}
-
-
-.skills .box {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
+@media (max-width: 575px) {
+  .skills ul {
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    line-height: 30px;
+  }
 }
 
-.skills .box h4 {
-    text-transform: uppercase;
-    color: #848C99;
-    font-weight: 500;
-}
-
-.skills .box .percent {
-    position: relative;
+@media (max-width: 520px) {
+  .name {
     width: 100%;
-    height: 10px;
-    background: #F0F0F0;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    /* justify-content: space-between; */
+  }
+
+  .topContactInfo {
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.skills .box .percent div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #f46f03;
+@media (max-width: 470px) {
+  .container {
+    padding: 1.2rem;
+  }
 }
 
 
+@media (max-width: 430px) {
+  .acknowledgements {
+    margin: 2rem 0;
+  }
 
-@media (max-width: 1000px) {
-    .container {
-        margin: 10px;
-        grid-template-columns: repeat(1,1fr);
-    }
-    
+  .acknowledgements ul {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    border-radius: 3px;
+
+    justify-content: space-around;
+    padding: 0.5rem 1rem;
+    height: 30vh;
+  }
+
+  .acknowledgements ul a {
+    width: 100px;
+  }
 }
 
-@media (max-width: 600px) {
-    .about .box {
-        flex-direction: column;
-    }
+@media (max-width: 430px) {
+  .container {
+    padding: 1.1rem;
+  }
 
-    .skills .box {
-        grid-template-columns: repeat(1,1fr);
-    }   
+  .skills ul {
+    align-items: left;
+    justify-content: left;
+    line-height: 30px;
+  }
 }
 
+@media (max-width: 322px) {
+  .container {
+    padding: 1.2rem;
+  }
+
+  .name {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .profileText h2 span {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .acknowledgements ul {
+    height: 25vh;
+  }
+}
